@@ -19,4 +19,4 @@ RUN pip install gunicorn
 EXPOSE 80
 
 # Run command when container launches
-CMD ["python3", "-m", "gunicorn", "4", "application:app", "-b", "0.0.0.0"]
+CMD ["python3", "-m", "gunicorn", "-w", "4", "application:app", "-b", "0.0.0.0"]

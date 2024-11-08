@@ -10,7 +10,7 @@ COPY . .
 RUN pwd
 
 # Verification that we are in the right folder
-RUN ls -al /home/ubuntu/test_app
+RUN ls -al
 
 RUN apt update -y
 

@@ -3,7 +3,7 @@ FROM ubuntu:latest
 
 RUN apt update -y
 
-RUN apt install python3 python-dev pip python3-pip -y
+RUN apt install python3 pip python3-pip -y
 
 RUN pip --version
 

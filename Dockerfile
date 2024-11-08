@@ -9,9 +9,9 @@ RUN pip --version
 
 RUN python3 --version
 
-RUN cd /home/ubuntu/url_shortner
+RUN cd /home/ubuntu/test_app
 
-RUN ls -al /home/ubuntu/url_shortner
+RUN ls -al /home/ubuntu/test_app
 
 
 # Install dependencies

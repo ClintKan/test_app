@@ -15,16 +15,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN pip install gunicorn
 
+# Expose port of the EC2 not container
+EXPOSE 80
 
-
-# # Expose port
-# EXPOSE 5000
-
-# # Run command when container launches
-# CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
-
-# RUN apt install python3 pip python3-pip -y
-
-# RUN pip --version
-
-# RUN python3 --version
+# Run command when container launches
+CMD ["python3", "-m", "gunicorn", "4", "application:app", "-b", "0.0.0.0"]

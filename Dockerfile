@@ -9,8 +9,6 @@ RUN pip --version
 
 RUN python3 --version
 
-RUN cd /home/ubuntu/test_app
-
 RUN ls -al /home/ubuntu/test_app
 
 

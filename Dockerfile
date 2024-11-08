@@ -7,7 +7,7 @@ RUN apt install python3 pip python3-pip -y
 
 RUN pip --version
 
-RUN python --version
+RUN python3 --version
 
 RUN cd /home/ubuntu/url_shortner
 

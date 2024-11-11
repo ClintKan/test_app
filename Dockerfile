@@ -20,3 +20,9 @@ EXPOSE 80
 
 # Run command when container launches
 CMD ["python3", "-m", "gunicorn", "-w", "4", "application:app", "-b", "0.0.0.0"]
+
+# To create the image - first
+# docker build -t urlshort_img .
+
+# Then to create the container that would have the app
+# docker run -d -ti -p 80:8000 --name Ibra_site urlshort_img
